@@ -9,3 +9,7 @@ Página de Receita listando ingredientes e modo de preparado, sendo um dos exerc
 ## Page Screenshot
 
 ![Page Screenshot](page-screenshot.jpg "Page Screenshot")
+
+## License
+
+[MIT License](LICENSE.txt)
