@@ -8,51 +8,6 @@
     scroll-behavior: smooth;
   }
 
-  .github-container {
-    background-color: black;
-    opacity: 0.8;
-    filter: drop-shadow(0 0 10px rgb(0 0 0 / 0.7));
-    border-radius: .5em;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    z-index: 99;
-    right: 1%;
-    bottom: 2%;
-    line-height: 0;
-  }
-
-  .github-link {
-    color: white;
-    font-family: monospace;
-    font-size: 2em;
-    text-decoration: 0;
-    padding: .5em;
-  }
-
-  .fa-github {
-    font-size: 1.5rem;
-    animation: spin 4s linear infinite;
-    transform: rotateY(1deg);
-    margin-right: -.5em;
-  }
-  
-  @keyframes spin {
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-
-  .github-text {
-    font-size: 0;
-    transition: all .5s ease-in-out;
-    margin-left: .3em;
-  }
-
-  .github-link:hover .github-text {
-    font-size: 1.5rem;
-  }
-
   .window {
     background-color: white;
     color: var(--color-font);
