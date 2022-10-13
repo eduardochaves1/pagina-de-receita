@@ -11,7 +11,3 @@ Link para a página no meu site: [https://pagina-de-receita.eduardochaves.me/](h
 ## Page Screenshot
 
 ![Page Screenshot](/assets/page-screenshot.jpg "Page Screenshot")
-
-## License
-
-[MIT License](LICENSE.txt "MIT License Document")
