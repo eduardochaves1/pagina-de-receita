@@ -1,46 +1,47 @@
-  .github-container {
-    background-color: black;
-    opacity: 0.8;
-    filter: drop-shadow(0 0 10px rgb(0 0 0 / 0.7));
-    border-radius: .5em;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    z-index: 99;
-    right: 1%;
-    bottom: 2%;
-    line-height: 0;
-  }
+.github-floating-btn {
+  background-color: black;
+  box-shadow: 0 0 10px rgb(0 0 0 / .3);
+  opacity: .8;
+  border-radius: .5em;
+  padding: .8em;
 
-  .github-link {
-    color: white;
-    font-family: monospace;
-    font-size: 2em;
-    text-decoration: 0;
-    padding: .5em;
-  }
+  text-decoration: 0;
+  font-family: 'Courier New', Courier, monospace;
+  color: whitesmoke;
+  line-height: 1rem;
+  
+  position: fixed;
+  display: flex;
+  align-items: center;
+  bottom: min(3%, .8em);
+  right: max(1%, .5em);
+  z-index: 99;
+}
 
-  .fa-github {
-    font-size: 1.5rem;
-    animation: spin 4s linear infinite;
-    transform: rotateY(1deg);
-    margin-right: -.5em;
-  }
+.github-floating-icon {
+  height: 1.5rem;
+  filter: brightness(100);
+  animation: spin 4s linear infinite;
+  transform: rotateY(1deg);
+  transform-origin: center;
+}
 
-  @keyframes spin {
-    100% {
-      transform: rotate(360deg);
-    }
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
   }
+}
 
-  .github-text {
-    margin-left: .3em;
-    font-size: 0;
-    opacity: 0;
-    transition: font-size .5s, opacity .5s;
-  }
+.github-floating-text {
+  margin: 0rem;
+  font-size: 0;
+  opacity: 0;
+  transform: translateY(2px);
+  transition: 400ms ease-in-out;
+}
 
-  .github-link:hover .github-text {
-    font-size: 1.5rem;
-    opacity: 1;
-  }
+.github-floating-btn:hover .github-floating-text {
+  margin-left: .5rem;
+  font-size: 1.5rem;
+  opacity: 1;
+}
